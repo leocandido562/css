@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+}
+
+.teste1 {
+    color: yellow;
+}
+
+#teste2 {
+    color: red;
+}
+
+.fonte {
+    font-family: Arial, Helvetica, sans-serif;
+}
