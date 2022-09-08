@@ -1,0 +1,60 @@
+ul {
+    background-color: black;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden; /* fez tudo aparecer??? */
+}
+
+li {
+    float: left; /* Fez o papel do 'inline-block' */
+}
+
+li a, .dropbtn { /* A classe dropbtn tem as mesmas propriedades */
+    display: inline-block;
+    color: white;
+    padding: 14px 16px; /* 14 de altura e 16 de largura */
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover, .dropdown:hover .dropbtn { /* Quando o dropdown for hover, ele vai afetar o dropbtn */
+    background: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    position: absolute; /* O conteúdo do dropdown vai se comportar em relação ao dropdown(Li) */
+    background: white;
+    width: 150px;
+    display: none; /* Faz o dropdown não ficar visível */
+}
+
+.dropdown-content a { /* Configurar o dropdown */
+    color: black;
+    display: block;
+    text-align: left;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.dropdown-content a:hover {
+    color: white;
+}
+
+.dropdown:hover .dropdown-content { /* Quando o dropdown for hover, o conteúdo dele deixa de ser 'none' e passa a ser 'block' (FICA VISÍVEL) */
+    display: block;
+}
+
+/* --------------------------------------------------------- */
+
+#login {
+    float: right;
+
+}
+
+#login-dropdown-content {
+    right: 8px;
+}
